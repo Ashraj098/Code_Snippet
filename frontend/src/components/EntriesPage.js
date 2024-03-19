@@ -7,7 +7,7 @@ const EntriesPage = () => {
   useEffect(() => {
     const fetchEntries = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/entries');
+        const response = await axios.get('https://code-snippet-f9p8.onrender.com/api/entries');
         setEntries(response.data);
       } catch (error) {
         console.error('Error fetching entries:', error);

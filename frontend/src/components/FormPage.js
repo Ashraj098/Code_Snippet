@@ -18,7 +18,7 @@ const FormPage = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/api/submit', formData);
+      await axios.post('https://code-snippet-f9p8.onrender.com/api/submit', formData);
       alert('Code snippet submitted successfully!');
       setFormData({
         username: '',
